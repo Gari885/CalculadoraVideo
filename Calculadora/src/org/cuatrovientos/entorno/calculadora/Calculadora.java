@@ -17,6 +17,16 @@ public class Calculadora {
 		System.out.print("Numero 2: ");
 		conversor = scanner.nextLine();
 		numeroDos = Integer.parseInt(conversor);
+		do {
+			System.out.println("Elige la operacion que quieres realizar");
+			System.out.println("1. Suma");
+			System.out.println("2. Resta");
+			System.out.println("3. Multiplicacion");
+			System.out.println("4. Salir");
+			conversor = scanner.nextLine();
+			opcion = Integer.parseInt(conversor);
+			
+		} while (opcion != 4);
 	}
 
 }
