@@ -9,6 +9,7 @@ public class Calculadora {
 		String conversor;
 		Integer numeroDos;
 		Integer opcion;
+		Integer respuesta;
 		System.out.println("//CALCULADORA\\");
 		System.out.println("Escribe 2 numeros");
 		System.out.print("Numero 1: ");
@@ -25,6 +26,21 @@ public class Calculadora {
 			System.out.println("4. Salir");
 			conversor = scanner.nextLine();
 			opcion = Integer.parseInt(conversor);
+			
+			switch (opcion) {
+			case 1:
+				respuesta = numeroUno + numeroDos;
+				System.out.println ("La suma de los dos numeros es "+ respuesta);
+				break;
+			case 2:
+				respuesta = numeroUno - numeroDos;
+				System.out.println ("La resta de los dos numeros es "+respuesta);
+				break;
+			case 3:
+				respuesta = numeroUno * numeroDos;
+				System.out.println ("La multiplicacion de los dos numeros es "+respuesta);
+				break;
+			}
 			
 		} while (opcion != 4);
 	}
