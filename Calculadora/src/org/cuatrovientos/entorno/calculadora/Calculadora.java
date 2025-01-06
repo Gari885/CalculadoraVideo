@@ -43,6 +43,7 @@ public class Calculadora {
 			}
 			
 		} while (opcion != 4);
+		System.out.println("Saliendo......");
 	}
 
 }
